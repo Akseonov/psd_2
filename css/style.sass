@@ -1,0 +1,483 @@
+@import reset
+@import vars
+@import mixins
+@import extends
+
+body
+  font-family: $title-font
+  position: relative
+
+.container
+  width: $grid-width
+  margin: 0 auto
+
+.header
+  height: 100px
+
+.header_main
+  width: 100vw
+  position: absolute
+
+.header__content
+  @extend %justify-content
+  height: 100%
+
+.header__block
+  @extend %align-items
+
+.menu
+  @extend %justify-content
+  width: 616px
+
+.menu__link
+  color: $title-color
+  font-size: 12px
+  text-transform: uppercase
+  letter-spacing: 1.2px
+  transition: 0.5s linear
+
+.menu__link:hover
+  color: $site-color
+
+.banner
+  background-color: gainsboro
+  background-image: url(../img/piqsels.com-id-scxns.jpg)
+  background-repeat: no-repeat
+  background-position: center left
+  background-size: 100%
+
+.banner__content
+  @extend %justify-content
+  height: 670px
+
+.banner__block
+  width: 50%
+  height: 100%
+  display: flex
+  justify-content: center
+  flex-direction: column
+  padding-left: 85px
+  h1
+    color: #1d1d1d
+    font-size: 38px
+    font-weight: 500
+    letter-spacing: 0.38px
+    margin-bottom: 32px
+  p
+    color: #787878
+    font-size: 18px
+    font-weight: 400
+    letter-spacing: 0.5px
+    font-family: $paragraph-font
+    margin-bottom: 40px
+
+.bottom
+  display: flex
+  a
+    color: #ffffff
+    background-color: $site-color
+    font-size: 12px
+    font-weight: 500
+    text-transform: uppercase
+    letter-spacing: 1.2px
+    height: 54px
+    line-height: 54px
+    padding-left: 46px
+    padding-right: 46px
+    outline: 2px $site-color solid
+    transition: 0.5s linear
+  a:hover
+    color: $site-color
+    background-color: transparent
+
+
+.about
+  margin: 100px auto
+
+.about__content
+  @extend %flex-direction
+  align-items: center
+  h1
+    color: #191919
+    font-size: 30px
+    font-weight: 500
+    letter-spacing: 0.3px
+  p
+    margin-top: 42px
+    width: 620px
+    color: #787878
+    font-family: $paragraph-font
+    font-size: 16px
+    font-weight: 400
+    letter-spacing: 0.06px
+    text-align: center
+    text-indent: 15px
+  img
+    margin-top: 37px
+
+.skills
+  height: 570px
+  @extend %justify-content
+
+.skills__left
+  background-color: #f8f9f9
+  width: 50%
+  @extend %flex-direction
+  align-items: flex-end
+  justify-content: center
+
+.skills__content
+  width: 585px
+  h1
+    color: #171717
+    font-size: 30px
+    font-weight: 500
+    letter-spacing: 0.3px
+  p
+    color: #000000
+    font-size: 12px
+    font-weight: 500
+    text-transform: uppercase
+    letter-spacing: 1.2px
+    margin-top: 40px
+    span
+      margin-left: 20px
+
+.skills__progress
+  @extend %justify-content
+  width: 500px
+  height: 3px
+  margin-top: 20px
+
+.skills__progress__left_1
+  width: 75%
+  height: 100%
+  background-color: $site-color
+
+.skills__progress__right_1
+  width: 25%
+  height: 100%
+  background-color: #d8d8d8
+
+.skills__progress__left_2
+  width: 90%
+  height: 100%
+  background-color: $site-color
+
+.skills__progress__right_2
+  width: 10%
+  height: 100%
+  background-color: #d8d8d8
+
+.skills__progress__left_3
+  width: 65%
+  height: 100%
+  background-color: $site-color
+
+.skills__progress__right_3
+  width: 35%
+  height: 100%
+  background-color: #d8d8d8
+
+.skills__right
+  width: 50%
+
+.skills__bgi
+  background-image: url(../img/envelopes_pencil_green_leaves-wallpaper-2400x1350.jpg)
+  background-position: bottom right
+  background-repeat: no-repeat
+  background-size: cover
+  height: 100%
+
+.numbers
+  height: 240px
+  background-color: $site-color
+
+.numbers__content
+  @extend %align-items
+  justify-content: space-around
+  height: 100%
+
+.numbers__block
+  display: flex
+  width: 25%
+  i
+    color: #ffffff
+    font-size: 48px
+    font-weight: 400
+    letter-spacing: 2.4px
+
+.numbers__text
+  margin-left: 25px
+  h1
+    color: #ffffff
+    font-size: 18px
+    font-weight: 500
+    text-transform: uppercase
+    letter-spacing: 0.54px
+    margin-bottom: 10px
+  p
+    color: #ffffff
+    font-size: 12px
+    font-weight: 500
+    text-transform: uppercase
+    letter-spacing: 1.2px
+
+.work
+  @extend %flex-direction
+  align-items: center
+
+.work__content
+  @extend %justify-content
+  flex-wrap: wrap
+  align-items: center
+
+.work__box
+  height: 280px
+  width: 25%
+  position: relative
+  a
+    transition: 0.5s linear
+  a:hover
+    filter: brightness(30%)
+  a img
+    width: 100%
+    height: 100%
+  i
+    color: #ffffff
+    font-size: 48px
+    font-weight: 400
+    letter-spacing: 2.4px
+    position: absolute
+    top: 43%
+    left: 43%
+    display: none
+
+.work__box:hover
+  i
+    display: block
+
+.work__load
+  height: 100px
+  width: 100%
+  background-color: #f5f5f5
+  @extend %align-items
+  justify-content: center
+  a
+    color: #8e8e8e
+    font-size: 12px
+    font-weight: 500
+    text-transform: uppercase
+    letter-spacing: 1.2px
+    height: 100%
+    line-height: 100px
+    width: 100%
+    text-align: center
+
+.process
+  @extend %flex-direction
+  align-items: center
+  h1
+    color: #191919
+    font-size: 30px
+    font-weight: 500
+    letter-spacing: 0.3px
+    margin-top: 100px
+  figcaption
+    color: #787878
+    font-family: $paragraph-font
+    font-size: 16px
+    font-weight: 400
+    letter-spacing: 0.5px
+    margin-top: 41px
+    width: 550px
+    text-align: center
+
+.process__block
+  position: relative
+  video
+    margin-top: 57px
+    margin-bottom: 100px
+    width: 100%
+    height: 571px
+
+.process__button
+  position: absolute
+  width: 85px
+  height: 85px
+  background: $site-color
+  border-radius: 50%
+  top: 50%
+  margin-top: -42px
+  left: 50%
+  margin-left: -42px
+  text-align: center
+  line-height: 90px
+  img
+    margin-left: 5px
+
+.services
+  @extend %flex-direction
+  background-color: #f5f5f5
+
+.services__content
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  margin: 100px auto 40px auto
+
+.services__box
+  @extend %flex-direction
+  align-items: center
+  justify-content: start
+  width: 25%
+  margin-bottom: 60px
+  i
+    color: #656565
+    font-size: 48px
+    font-weight: 400
+    margin-bottom: 30px
+  h1
+    color: #191919
+    font-size: 12px
+    font-weight: 600
+    text-transform: uppercase
+    letter-spacing: 1.2px
+    margin-bottom: 20px
+  p
+    color: #787878
+    font-size: 12px
+    font-weight: 400
+    letter-spacing: 0.08px
+    text-align: center
+    line-height: 24px
+    width: 230px
+
+.testimonials
+  background-color: $site-color
+
+.testimonials__content
+  @extend %flex-direction
+  justify-content: center
+  text-align: center
+  p
+    padding: 0 180px
+    color: #ffffff
+    font-size: 24px
+    font-weight: 500
+    line-height: 36px
+    margin-top: 180px
+    margin-bottom: 35px
+  cite
+    color: #ffffff
+    font-size: 12px
+    font-weight: 500
+    text-transform: uppercase
+    margin-bottom: 110px
+  img
+    display: inline-block
+    width: 40px
+    margin-bottom: 60px
+
+.clients__content
+  display: flex
+  justify-content: space-around
+
+.clients__block
+  margin: 64px 0 50px 0
+
+.feedback
+  background-color: #f5f5f5
+
+.feedback__content
+  @extend %flex-direction
+  justify-content: center
+  text-align: center
+  padding: 100px
+  h1
+    margin-top: 100px
+    color: #1d1d1d
+    font-size: 30px
+    font-weight: 700
+    letter-spacing: 0.3px
+  p
+    margin: 35px auto
+    width: 610px
+    color: #787878
+    font-size: 16px
+    font-weight: 400
+    letter-spacing: 0.08px
+    line-height: 24px
+  form
+    margin: 0 auto
+    width: 670px
+    display: flex
+    text-align: center
+    justify-content: space-between
+    flex-wrap: wrap
+    input
+      width: 280px
+      height: 48px
+      margin-bottom: 30px
+      padding: 0 20px
+    input:last-of-type
+      width: 670px
+    textarea
+      width: 670px
+      height: 170px
+      padding: 20px
+      margin-bottom: 30px
+
+.feedback__button
+  display: flex
+  margin: 0 auto
+  a
+    color: #ffffff
+    background-color: $site-color
+    font-size: 12px
+    font-weight: 500
+    text-transform: uppercase
+    letter-spacing: 1.2px
+    height: 54px
+    line-height: 54px
+    padding-left: 46px
+    padding-right: 46px
+    outline: 2px $site-color solid
+    transition: 0.5s linear
+  a:hover
+    color: $site-color
+    background-color: transparent
+
+.footer
+  background-color: #141414
+
+.footer__content
+  @extend %justify-content
+  padding: 100px 0
+
+.footer__block
+  @extend %flex-direction
+  h1
+    color: #ffffff
+    font-size: 18px
+    font-weight: 500
+    letter-spacing: 0.18px
+    margin-bottom: 27px
+  p
+    color: #bcbcbc
+    font-size: 15px
+    font-weight: 400
+    letter-spacing: 0.07px
+    width: 255px
+    margin-bottom: 5px
+  a
+    color: #bcbcbc
+    font-size: 15px
+    font-weight: 400
+    letter-spacing: 0.07px
+    margin-bottom: 5px
+    transition: 0.5s linear
+  a:hover
+    color: $site-color
+    background-color: transparent
+
