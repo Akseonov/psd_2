@@ -11,7 +11,7 @@
   list-style-type: none;
   text-decoration: none; }
 
-.header__content, .menu, .banner__content, .skills, .skills__progress, .work__content, .footer__content, .about__me__content {
+.header__content, .menu, .banner__content, .skills, .skills__progress, .work__content, .footer__content, .about__me__content, .project__content, .project__button {
   display: flex;
   justify-content: space-between; }
 
@@ -19,7 +19,7 @@
   display: flex;
   align-items: center; }
 
-.about__content, .skills__left, .work, .process, .services, .services__box, .testimonials__content, .feedback__content, .footer__block, .description__content, .about__me__right {
+.about__content, .skills__left, .work, .process, .services, .services__box, .testimonials__content, .feedback__content, .footer__block, .description__content, .about__me__right, .project, .project__left {
   display: flex;
   flex-direction: column; }
 
@@ -586,5 +586,95 @@ body {
   .about__me__right img {
     margin-left: 85px;
     margin-bottom: 140px; }
+
+.project__content {
+  background-color: #f8f9f9; }
+.project__left {
+  width: 50%;
+  align-items: flex-start;
+  justify-content: center; }
+  .project__left__wrap {
+    padding: 100px; }
+    .project__left__wrap h1 {
+      color: #171717;
+      font-size: 38px;
+      font-weight: 500;
+      letter-spacing: 0.38px;
+      margin-bottom: 35px; }
+    .project__left__wrap p {
+      color: #787878;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.08px;
+      font-family: "Nunito", sans-serif; }
+  .project__left__p p {
+    color: #787878;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.08px;
+    font-family: "Nunito", sans-serif;
+    margin-top: 60px; }
+    .project__left__p p span {
+      color: #171717;
+      font-weight: 700;
+      letter-spacing: 0.08px; }
+.project__right {
+  width: 50%; }
+.project__bgi {
+  background-image: url("../img/04_Project Single.jpg");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%; }
+.project__button {
+  background-color: #ffffff;
+  height: 100px;
+  width: 100%;
+  align-items: center; }
+  .project__button a {
+    color: #1d1d1d;
+    height: 100%;
+    display: block;
+    line-height: 100px;
+    transition: 0.5s linear; }
+  .project__button a:hover {
+    color: #10c9c3; }
+    .project__button a:hover i {
+      color: #10c9c3; }
+.project__button_1 {
+  text-align: left;
+  width: 40%;
+  color: #1d1d1d;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.2px; }
+  .project__button_1 i {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.24px;
+    padding-left: 100px;
+    transition: 0.5s linear; }
+.project__button_2 {
+  text-align: center;
+  width: 20%; }
+.project__button_3 {
+  text-align: right;
+  width: 40%;
+  color: #1d1d1d;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.2px; }
+  .project__button_3 i {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.24px;
+    padding-right: 100px;
+    transition: 0.5s linear; }
 
 /*# sourceMappingURL=style.css.map */
