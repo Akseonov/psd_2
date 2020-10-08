@@ -492,6 +492,9 @@ body
       margin-bottom: 30px
       resize: none
 
+    label
+      display: none
+
 .feedback__button
   display: flex
   margin: 0 auto
@@ -513,6 +516,9 @@ body
   a:hover
     color: $site-color
     background-color: transparent
+
+.feedback__button_contact
+  margin: 0 0 0 2px
 
 .footer
   background-color: #141414
@@ -739,3 +745,82 @@ body
       letter-spacing: 0.24px
       padding-right: 100px
       transition: 0.5s linear
+
+.contact
+  background-color: #f8f9f9
+
+.contact__content
+  @extend %justify-content
+  padding: 100px 0
+
+.contact__left
+  width: 40%
+  h1
+    color: #171717
+    font-size: 30px
+    font-weight: 600
+    letter-spacing: 0.3px
+    padding-bottom: 45px
+  p
+    width: 370px
+    font-family: $paragraph-font
+    color: #787878
+    font-size: 16px
+    font-weight: 400
+    letter-spacing: 0.08px
+    padding-bottom: 35px
+    line-height: 24px
+
+.contact__wrap__left
+  p
+    color: #787878
+    font-size: 16px
+    font-weight: 400
+    letter-spacing: 0.08px
+    font-family: $paragraph-font
+    line-height: 36px
+  span
+    color: #171717
+    font-weight: 700
+    letter-spacing: 0.08px
+    font-family: $paragraph-font
+
+.contact__right
+  width: 60%
+
+  form
+    margin: 0 auto
+    width: 670px
+    display: flex
+    text-align: center
+    justify-content: space-between
+    flex-wrap: wrap
+
+    label
+      display: none
+
+    input
+      width: 280px
+      height: 48px
+      margin-bottom: 30px
+      padding: 0 20px
+
+    input:last-of-type
+      width: 670px
+
+    textarea
+      width: 670px
+      height: 170px
+      padding: 20px
+      margin-bottom: 30px
+      resize: none
+
+.map
+  background-color: #f8f9f9
+
+.map__content
+  padding-bottom: 100px
+  iframe
+    width: 100%
+    height: 470px
+    filter: grayscale(100%)

@@ -11,7 +11,7 @@
   list-style-type: none;
   text-decoration: none; }
 
-.header__content, .menu, .banner__content, .skills, .skills__progress, .work__content, .footer__content, .about__me__content, .project__content, .project__button {
+.header__content, .menu, .banner__content, .skills, .skills__progress, .work__content, .footer__content, .about__me__content, .project__content, .project__button, .contact__content {
   display: flex;
   justify-content: space-between; }
 
@@ -453,6 +453,8 @@ body {
       padding: 20px;
       margin-bottom: 30px;
       resize: none; }
+    .feedback__content form label {
+      display: none; }
 
 .feedback__button {
   display: flex;
@@ -473,6 +475,9 @@ body {
   .feedback__button a:hover {
     color: #10c9c3;
     background-color: transparent; }
+
+.feedback__button_contact {
+  margin: 0 0 0 2px; }
 
 .footer {
   background-color: #141414; }
@@ -676,5 +681,77 @@ body {
     letter-spacing: 0.24px;
     padding-right: 100px;
     transition: 0.5s linear; }
+
+.contact {
+  background-color: #f8f9f9; }
+
+.contact__content {
+  padding: 100px 0; }
+
+.contact__left {
+  width: 40%; }
+  .contact__left h1 {
+    color: #171717;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    padding-bottom: 45px; }
+  .contact__left p {
+    width: 370px;
+    font-family: "Nunito", sans-serif;
+    color: #787878;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.08px;
+    padding-bottom: 35px;
+    line-height: 24px; }
+
+.contact__wrap__left p {
+  color: #787878;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.08px;
+  font-family: "Nunito", sans-serif;
+  line-height: 36px; }
+.contact__wrap__left span {
+  color: #171717;
+  font-weight: 700;
+  letter-spacing: 0.08px;
+  font-family: "Nunito", sans-serif; }
+
+.contact__right {
+  width: 60%; }
+  .contact__right form {
+    margin: 0 auto;
+    width: 670px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .contact__right form label {
+      display: none; }
+    .contact__right form input {
+      width: 280px;
+      height: 48px;
+      margin-bottom: 30px;
+      padding: 0 20px; }
+    .contact__right form input:last-of-type {
+      width: 670px; }
+    .contact__right form textarea {
+      width: 670px;
+      height: 170px;
+      padding: 20px;
+      margin-bottom: 30px;
+      resize: none; }
+
+.map {
+  background-color: #f8f9f9; }
+
+.map__content {
+  padding-bottom: 100px; }
+  .map__content iframe {
+    width: 100%;
+    height: 470px;
+    filter: grayscale(100%); }
 
 /*# sourceMappingURL=style.css.map */
