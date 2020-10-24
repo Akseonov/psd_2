@@ -373,12 +373,13 @@ a {
     margin-bottom: 20px; }
   .services__box p {
     color: #787878;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.08px;
     text-align: center;
     line-height: 24px;
-    width: 230px; }
+    width: 240px;
+    font-family: "Nunito", sans-serif; }
 
 .testimonials {
   background-color: #10c9c3; }
@@ -431,12 +432,13 @@ a {
     letter-spacing: 0.3px; }
   .feedback__content p {
     margin: 35px auto;
-    width: 610px;
+    width: 540px;
     color: #787878;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.08px;
-    line-height: 24px; }
+    line-height: 24px;
+    font-family: "Nunito", sans-serif; }
   .feedback__content form {
     margin: 0 auto;
     width: 670px;
@@ -629,8 +631,7 @@ a {
   margin-top: 60px; }
   .project__left__p p span {
     color: #171717;
-    font-weight: 700;
-    letter-spacing: 0.08px; }
+    font-weight: 700; }
 
 .project__right {
   width: 50%; }
@@ -727,11 +728,9 @@ a {
   letter-spacing: 0.08px;
   font-family: "Nunito", sans-serif;
   line-height: 36px; }
-.contact__wrap__left span {
-  color: #171717;
-  font-weight: 700;
-  letter-spacing: 0.08px;
-  font-family: "Nunito", sans-serif; }
+  .contact__wrap__left p span {
+    color: #171717;
+    font-weight: 700; }
 
 .contact__right {
   width: 60%; }
