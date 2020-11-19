@@ -614,7 +614,7 @@ a {
 .description__content {
   z-index: 3;
   position: relative; }
-  .description__content h1 {
+  .description__content h2 {
     padding-top: 93px;
     padding-bottom: 23px;
     color: #ffffff;
