@@ -168,20 +168,20 @@ a {
   width: 585px;
   padding-top: 159px;
   padding-bottom: 164px; }
-  .skills__content h1 {
+  .skills__content h2 {
     color: #171717;
     font-size: 30px;
     font-weight: 500;
     letter-spacing: 0.2px;
     margin-bottom: -9px; }
-  .skills__content h2 {
+  .skills__content h3 {
     color: #000000;
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.8px;
     margin-top: 38px; }
-    .skills__content h2 span {
+    .skills__content h3 span {
       margin-left: 20px; }
 
 .skills__progress {
@@ -338,7 +338,7 @@ a {
     font-weight: 500;
     letter-spacing: 0;
     margin-top: 92px; }
-  .process figcaption {
+  .process p {
     color: #787878;
     font-family: "Nunito", sans-serif;
     font-size: 16px;
@@ -400,7 +400,7 @@ a {
     font-size: 48px;
     font-weight: 400;
     margin-bottom: 23px; }
-  .services__box h1 {
+  .services__box h2 {
     color: #191919;
     font-size: 12px;
     font-weight: 600;
