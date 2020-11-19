@@ -135,7 +135,7 @@ a {
 
 .about__content {
   align-items: center; }
-  .about__content h1 {
+  .about__content h2 {
     color: #191919;
     font-size: 30px;
     font-weight: 500;
@@ -250,7 +250,7 @@ a {
 
 .numbers__text {
   margin-left: 25px; }
-  .numbers__text h1 {
+  .numbers__text h2 {
     color: #ffffff;
     font-size: 18px;
     font-weight: 500;
@@ -333,7 +333,7 @@ a {
 
 .process {
   align-items: center; }
-  .process h1 {
+  .process h2 {
     color: #191919;
     font-size: 30px;
     font-weight: 500;
@@ -468,7 +468,7 @@ a {
   text-align: center;
   margin: 0 auto;
   padding-bottom: 100px; }
-  .feedback__content h1 {
+  .feedback__content h2 {
     margin-top: 95px;
     color: #1d1d1d;
     font-size: 30px;
